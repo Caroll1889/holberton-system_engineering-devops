@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Bash script that loops from 1 to 10 with conditionals
+
+e=1
+while [ $e -le 10 ]
+do
+	if [[ $e = 4 ]]
+	then
+		echo "bad luck"
+	elif [[ $e = 8 ]]
+	then
+		echo "good luck"
+	else
+		echo "Holberton School"
+	fi
+	((e++))
+done	
