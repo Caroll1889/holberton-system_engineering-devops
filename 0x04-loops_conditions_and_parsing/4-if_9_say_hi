@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# display a string 10 times and uses a conditional
+
+x=1
+while [ $x -le 9 ]
+do
+	echo "Holberton School"
+	((x++))
+	if [ $x = 9 ]
+	then
+		echo "Hi"
+	fi
+done
