@@ -5,9 +5,9 @@ x=1
 while [ $x -le 9 ]
 do
 	echo "Holberton School"
-	if [ $x = 8 ]
+	((x++))
+	if [ $x -eq 9 ]
 	then
 		echo "Hi"
 	fi
-	((x++))
 done
