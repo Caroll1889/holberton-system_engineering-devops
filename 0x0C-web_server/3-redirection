@@ -5,4 +5,3 @@ apt-get -y update
 apt-get -y install nginx
 sed -ie "s/^server {$/server {\n\trewrite ^\/redirect_me https:\/\/myperson.tech permanent;/g" /etc/nginx/sites-available/default
 service nginx restart
-
