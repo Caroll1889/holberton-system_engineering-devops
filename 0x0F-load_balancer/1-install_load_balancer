@@ -8,5 +8,5 @@ service haproxy start
 echo "bind *:80" | tee -a /etc/haproxy/haproxy.cfg
 echo "mode http" | tee -a /etc/haproxy/haproxy.cfg
 echo "balance roundrobin" | tee -a /etc/haproxy/haproxy.cfg
-echo "server 874 web-01-34.74.218.90 check" | tee -a /etc/haproxy/haproxy.cfg
-echo "server 874 web-02-35.229.122.165 check" | tee -a /etc/haproxy/haproxy.cfg
+echo "server 874-web-01-34.74.218.90 check" | tee -a /etc/haproxy/haproxy.cfg
+echo "server 874-web-02-35.229.122.165 check" | tee -a /etc/haproxy/haproxy.cfg
