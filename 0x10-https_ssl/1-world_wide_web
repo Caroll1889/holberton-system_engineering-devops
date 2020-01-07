@@ -10,11 +10,11 @@ else
     subdom=("www" "lb-01" "web-01" "web-02")
 fi
 
-for i in "${subdomain[@]}"
+for i in "${subdom[@]}"
 
 do
     echo -n "The subdomain $i"
-    dig "$i.$1" | grep -A1 'ANSWER SECTION:' | tail -n -1 | awk '{print " is a " $4 " record and points to " $5}'
+    dig "$i.$dom" | grep -A1 'ANSWER SECTION:' | tail -n -1 | awk '{print " is a " $4 " record and points to " $5}'
 
 done
 
