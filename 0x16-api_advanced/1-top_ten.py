@@ -27,3 +27,5 @@ def top_ten(subreddit):
             title = i.get('data').get('title')
 
             print(title)
+    else:
+        print(None)  
